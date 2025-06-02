@@ -16,7 +16,7 @@
             <li class="active"><a href="/about.html">About us</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">News</a></li>
-            <li class="btn"><a href="#">Contant us</a></li>
+            <li class="btn"><a href="/contact.html">Contant us</a></li>
           </ul>
         </nav>
     </header>
@@ -53,15 +53,54 @@
       </div>
 
       <div class="work-banner container">
+        <div class="card-work-img">
+          <img src="/img/pages1/game2.png" alt="">
+        </div>
         <div class="work-block">
           <span class="badge">Lorem ipsum</span>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi totam voluptates.</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui veniam saepe facilis dolor corporis, dolorum possimus vitae officia neque facere illum quisquam maxime mollitia. Maiores veritatis illo ea repellendus.</p>
         </div>
-        <img src="/img/pages1/game2.png" alt="">
       </div>
 
+        <div class="our-team container">
+          <h3>Our Team</h3>
+          <div class="card-img">
+            <img src="/img/pages2/Bill 1.png" alt="">
+            <p>Max Bob</p>
+            <p>COO</p>
+          </div>
+          <div class="card-img">
+            <img src="/img/pages2/Beverly 1.png" alt="">
+            <p>Kami Bob</p>
+            <p>COO</p>
+          </div>
+          <div class="card-img">
+            <img src="/img/pages2/Claudia 1.png" alt="">
+            <p>Lola Bob</p>
+            <p>COO</p>
+          </div>
+          <div class="card-img">
+            <img src="/img/pages2/Avatar 1.png" alt="">
+            <p>Den Bob</p>
+            <p>COO</p>
+          </div>
+        </div>
 
+        <div class="container email">
+          <h3>Lorem, ipsum </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa deleniti quia architecto suscipit. Ratione ullam assumenda molestias corporis, perferendis similique, quaerat est iste laborum fugit dolor odio beatae voluptates.</p>  
+          <div class="block">
+            <div>
+              <h4>Stay in the loop</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid distinctio ut rem maxime mollitia ducimus illo earum architecto repellat.</p>
+            </div>
+              <div>
+                <input type="email" id="emailField" placeholder="Enter email address">
+                <button onclick="checkEmail()">Continue</button>
+              </div>
+          </div>
+        </div>
 
     </div>
     
@@ -76,7 +115,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div>
-          <h4>About us</h4>
+          <h4><a href="/about.html">About us</a></h4>
           <ul>
             <li>Zeux</li>
             <li>Portfolio</li>
@@ -85,7 +124,7 @@
           </ul>
         </div>
         <div>
-          <h4>Contact us</h4>
+          <h4><a href="/contact.html">Contact us</a></h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, natus.</p>
           <p>+908 89079 980</p>
         </div>
@@ -94,5 +133,13 @@
       <p>Copyright ® 2025 Lorem All rights Rcerved</p>
     </footer>
 
+<script>
+  function checkEmail(){
+    let email = document.querySelector('#emailField').value;
+    if(!email.includes('@')) alert('Нет символа @');
+    else if(!email.includes('.')) alert('Нет символа .');
+    else alert('Все отлично');
+  }
+</script>
 </body>
 </html> 

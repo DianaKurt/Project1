@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamePlay</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="container">
+        <span class="logo">logo</span>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li class="btn"><a href="/contact.html">Contant us</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container hero-contacts">
+      <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <img src="/img/pages3/Huge Global.png" alt="">
+    </div>
+    <div class="feedback">
+      <div class="container">
+        <h2>Say hello</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing .</p>
+
+        <form>
+          <div class="inline">
+            <div>
+              <label>First Name</label>
+              <input type="text">
+            </div>
+            <div>
+              <label>Last Name</label>
+              <input type="text">
+            </div>
+          </div>
+          <label>Email Adress</label>
+          <input type="email" class="one-line">
+
+          <label>Message</label>
+          <textarea class="one-line"></textarea>
+
+          <button type="button">Get in touch</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container email">
+      <h3>Lorem, ipsum </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa deleniti quia architecto suscipit. Ratione ullam assumenda molestias corporis, perferendis similique, quaerat est iste laborum fugit dolor odio beatae voluptates.</p>  
+      <div class="block">
+        <div>
+          <h4>Stay in the loop</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid distinctio ut rem maxime mollitia ducimus illo earum architecto repellat.</p>
+        </div>
+          <div>
+            <input type="email" id="emailField" placeholder="Enter email address">
+            <button onclick="checkEmail()">Continue</button>
+          </div>
+      </div>
+    </div>
+
+</div>
+ 
+
+<footer>
+  <div class="blocks container">
+    <div>
+      <span class="logo">logo</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div>
+      <h4><a href="about.html">About us</a></h4>
+      <ul>
+        <li>Zeux</li>
+        <li>Portfolio</li>
+        <li>Careers</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div>
+      <h4><a href="/contact.html">Contact us</a></h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, natus.</p>
+      <p>+908 89079 980</p>
+    </div>
+  </div>
+  <hr>
+  <p>Copyright ® 2025 Lorem All rights Rcerved</p>
+</footer>
+
+<script>
+  function checkEmail(){
+    let email = document.querySelector('#emailField').value;
+    if(!email.includes('@')) alert('Нет символа @');
+    else if(!email.includes('.')) alert('Нет символа .');
+    else alert('Все отлично');
+  }
+</script>
+</body>
+</html>

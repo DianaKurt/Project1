@@ -347,11 +347,20 @@ header nav ul li.btn a:hover, .email .block button:hover{
 
 .email{
   padding-bottom: 120px;
+  
+}
+
+.email p{
+  width: 450px;
+  padding-left: 30px;
+  line-height: 1.6;
 }
 
 .email h3{
+  padding-left: 30px;
+  line-height: 1.6;
   margin-top: 60px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .email .block{
   background: #000000;
@@ -365,11 +374,14 @@ header nav ul li.btn a:hover, .email .block button:hover{
 }
 
 .email .block h4{
+  line-height: 1.6;
+  padding-left: 30px;
   font-size: 30px;
   font-weight: 500;
 }
 .email .block p{
-  width: 500px;
+  line-height: 1.6;
+  width: 450px;
 }
 
 .email .block input {
@@ -443,7 +455,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
   width: 25%;
   border-radius: 10px;
   padding: 50px 35px;
-  background: #190013;
+  background: #25021d;
   line-height: 170%
 }
 .work .blocks .block h3{
@@ -469,46 +481,172 @@ header nav ul li.btn a:hover, .email .block button:hover{
 
 .work-banner{
   display: flex;
-  align-items: center;
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-  /*width: 100%;
-  margin-top: 30px;
-  padding-top: 40px;*/
-  background: #190013;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0, 0.5);
+  background: #25021d;
+
+
 }
 
-.work-banner img{
+.work-banner .card-work-img{
   width: 300px;
   height: auto;
-  /*display: flex;
-  position: relative;
-  margin-top: 100px;
-  margin-left: 100px;
-  width: 450px;*/
-  margin-right: 20px;
-  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin-left: 70px;
+  padding: 30px;
+
 }
 
 .work-banner .work-block{
-  flex: 2;
-  /*display: flex;
-  position: absolute;
+  padding: 30px;
+  text-align:justify;
+  max-width: 40%;
   justify-content: center;
-  text-align: center;
-  right: -40px;
-  line-height: 160%;
-  width: 50%;
-  border-radius: 10px;
-  padding: 50px 35px;*/
+  padding-top: 70px;
 
 
 }
+
 
 .work-banner .work-block .badge{
   font-size: 16px;
+  margin: 0 0 20px 0;;
 }
+.work-banner .work-block h3{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+.work-banner .work-block p{
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/*  card our team */
+.our-team {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card-img{
+  background: #2b0021;
+  width: 20%;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 80px;
+  box-shadow: 0 10px 30px rgba(0,0,0, 0.5);
+}
+.card-img img{
+  height: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.our-team h3{
+  display: flex;
+  position: absolute;
+  margin: 15px;
+  padding: 15px;
+
+}
+.our-team p{
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/*
+ страница контакты*/
+
+ .hero-contacts h1{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 30px;
+ }
+ .hero-contacts p{
+  text-align: center;
+ }
+
+ .hero-contacts img{
+  width: 70%;
+  margin: 80px 15%;
+ }
+
+ .feedback{
+  padding: 70px;
+  background: #000000;
+ }
+ .feedback h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+ }
+ .feedback p{
+  text-align: center;
+  margin-top: 10px;
+ }
+.feedback form{
+  margin: 80px auto;
+  width: 600px;
+}
+.feedback form .inline{
+  display: flex;
+  justify-content: space-between;
+}
+.feedback form .inline > div{
+  width: 50%;
+
+}
+
+.feedback form label{
+  color: #4f4f4f;
+  font-size: 14px;
+
+}
+.feedback form input,
+.feedback form textarea{
+  background: #23051c;
+  border-radius: 10px;
+  border: 0.6px solid #cecece;
+  display: block;
+  width: 90%;
+  padding: 15px 10px;
+  outline: none;
+  color: white;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+.feedback form .one-line{
+  width: 96%;
+}
+.feedback form textarea{
+  resize: none;
+  height: 200px;
+}
+.feedback form button{
+  background: #DC7000;
+  border-radius: 5px;
+  border: none;
+  float: right;
+  cursor: pointer;
+  color: white;
+  padding: 15px 30px;
+  transition: all 500ms ease;
+  font-size: 16px;
+
+}
+.feedback form button:hover{
+  background: rgb(156, 43, 43);
+}
+  
 /* footer */
 
 footer{
